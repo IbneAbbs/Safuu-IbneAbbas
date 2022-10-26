@@ -1,0 +1,71 @@
+
+*{
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+/////////////////////////////////////////////////////Header///////////////////////////////////////
+
+.navbar{
+    background-color: #000000FF;
+    height: 100px;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    color:white;
+    border-bottom: 5px solid #34c439FF;
+}
+.nav-menu-items{
+    list-style: none;   
+    width: 100%;    
+}
+.menu-bars{
+    display: none;
+    margin-left: .5rem;
+    font-size: 4rem;
+    color:#34c439FF;
+}
+.nav-menu{
+    margin-top: 6rem;
+    border: 3px solid #34c439FF;
+    overflow: hidden;
+    background-color: #000000FF;
+    width: 250px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    ////For hiding dashboard///
+    position: fixed;
+    top: 0;
+    // left: -100%;
+    transition: 850ms;
+}
+.nav-menu.active{
+    left: 0;
+    transition: 350ms;
+}
+.nav-text{
+    font-weight: 600;
+    background-color:#011A01FF ;
+    padding: 10px 40px;
+    margin: 25px 0px;
+    height:60px;
+    width: 13rem;
+    border-radius: 10px;
+}
+.span-text{
+    padding-left: 20px;
+    color:white;
+}
+.nav-text a{
+    text-decoration: none;
+}
+.nav-text:hover{
+    
+    background-color:#34c439FF;
+}
+
+/////////////////////////////////////////////////////Dashboard///////////////////////////////////////
+
