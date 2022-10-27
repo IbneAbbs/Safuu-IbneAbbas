@@ -116,11 +116,16 @@
 }
 
 .card-deck {
+    .home-card-noborder{
+        border: 0px !important;
+    }
   .card {
     background-color: transparent;
     border: 1px solid #47bd4bff;
     margin: 2px 0px;
     text-align: center;
+    border-radius: 15px;
+    margin-bottom: 20px;
     .card-title {
       font-size: 24px;
       font-weight: 700;
@@ -132,7 +137,7 @@
     }
   }
   .mid-card {
-    height: 21rem !important;
+    height: 23rem !important;
     .btn-primary {
       background-color: #011a01ff !important;
       border: 2px solid #114e13ff !important;
@@ -221,10 +226,25 @@
         color: grey;
     }
   }
+  .swap-card-text-l{
+    font-weight: 700;
+    text-align: left;
+  }
+  .swap-card-text-r{
+    font-weight: 700;
+    text-align: right !important;
+    color: #47bd4bff;
+  }
   .swap-card-btn{
     width: 100%;
     margin-top: .5rem;
     margin-bottom: 1rem;
+  }
+  .inner-last-cardh5{
+    font-size: 16px;
+  }
+  .bi-arrow-down-short{
+    font-size: 35px;
   }
 }
 
@@ -237,6 +257,49 @@
   color: white;
   border-right: 3px solid #47bd4bff;
 }
+.cal-card{
+    padding: 20px;
+    .cal-text-heading{
+        text-align: left;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .cal-text-left{
+        text-align: left;
+        font-size: 14px;
+    }
+    .card-heading{
+        border: 0px;
+        h5{
+            font-size: 20px !important;
+            color:gray;
+        }
+        p{
+            font-size: 24px !important;
+            color:white !important;
+        }
+    }
+   
+    .form-group{
+        text-align: left !important;
+        font-weight: 700;
+        .form-control{
+            background-color: transparentize($color: #2e2d2d, $amount: 0.3);
+            font-weight: 700;
+            color: white;
+        }
+    }
+    .cal-inner-card{
+        border: 0px;
+        .inner-card-col1{
+            text-align: left;
+        }
+        .inner-card-col2{
+            text-align: right;
+        }
+    }
+
+}
 
 /////////////////////////////////////////////////////Analytics///////////////////////////////////////
 .analytic-fluid {
@@ -246,6 +309,27 @@
   background-size: cover;
   color: white;
   border-right: 3px solid #47bd4bff;
+
+  .analytic-card-last{
+    height: 45vh;
+
+    .btn-secondary{
+        background-color: transparent !important;
+        border-radius: 10px !important;
+        color: #47bd4bff;
+        font-weight: 600 !important;
+    }
+
+}
+  .list-unstyled{
+    align-items: center;
+    justify-content: center;
+    li{
+        color: #47bd4bff;
+        padding: 1rem 2rem;
+        font-weight: 700;
+    }
+  }
 }
 
 /////////////////////////////////////////////////////Docs///////////////////////////////////////

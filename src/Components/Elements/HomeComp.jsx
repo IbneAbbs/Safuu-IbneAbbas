@@ -8,7 +8,7 @@ const HomeComp = () => {
           <div className="row py-3">
             <div className="col-md-4  p-3">
               <div className="card-deck">
-                <div className="card">
+                <div className="card home-card-noborder">
                   <div className="card-body">
                     <h5 className="card-title">
                       Market Value of Treasury Asset
@@ -45,7 +45,7 @@ const HomeComp = () => {
             </div>
             <div className="col-md-4  p-3">
               <div className="card-deck">
-                <div className="card">
+                <div className="card home-card-noborder">
                   <div className="card-body">
                     <h5 className="card-title">SAFUU Insurance Fund Value</h5>
                     <p className="card-text">$8,231</p>
@@ -67,7 +67,7 @@ const HomeComp = () => {
             </div>
           </div>
           <div className="row">
-            <div className="col-md-4 p-3">
+            <div className="col-md-4">
               <div className="card-deck">
                 <div className="card">
                   <div className="card-body">
@@ -77,7 +77,7 @@ const HomeComp = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-4  p-3">
+            <div className="col-md-4">
               <div className="card-deck">
                 <div className="card">
                   <div className="card-body">
@@ -87,7 +87,7 @@ const HomeComp = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-4  p-3">
+            <div className="col-md-4">
               <div className="card-deck">
                 <div className="card">
                   <div className="card-body">

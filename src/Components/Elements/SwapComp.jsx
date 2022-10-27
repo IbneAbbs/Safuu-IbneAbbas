@@ -18,7 +18,7 @@ const SwapComp = () => {
                         </p>
                       </div>
                       <div className="col-md-4 swap-col2">
-                        <i class="bi bi-arrow-clockwise"></i>
+                        <i className="bi bi-arrow-clockwise"></i>
                         <i className="bi bi-gear ps-3"></i>
                       </div>
                     </div>
@@ -38,6 +38,8 @@ const SwapComp = () => {
                       </div>
                     </div>
 
+                    <i className="bi bi-arrow-down-short text-success"/>
+
                     <div className="card swap-inner-card">
                       <div className="card-body">
                         <div className="row">
@@ -51,7 +53,12 @@ const SwapComp = () => {
                           </div>
                         </div>
                       </div>
+
                     </div>
+                        <div className="row">
+                          <div className="col-md-6"> <p className="swap-card-text-l">Slippage Tolerance</p></div>
+                          <div className="col-md-6"><p className="swap-card-text-r">0.1%</p></div>
+                        </div>    
 
                     <button
                       type="button"
@@ -64,13 +71,17 @@ const SwapComp = () => {
                       <div className="card-body">
                         <div className="row">
                           <div className="col-md-6 inner-card-col1">
-                            <h5 className="inner-cardh5">From:</h5>
-                            <p className="inner-cardp">0.00</p>
+                            <h5 className="inner-last-cardh5">Minimum received <i className="bi bi-question-circle"/></h5>
+                            <h5 className="inner-last-cardh5">Price Impact <i className="bi bi-question-circle"/></h5>
+                            <h5 className="inner-last-cardh5">Liquidity Provider Fee <i className="bi bi-question-circle"/></h5>
+                            <h5 className="inner-last-cardh5">Route <i className="bi bi-question-circle"/></h5>
                           </div>
                           <div className="col-md-6 inner-card-col2">
-                            <p className="inner-cardp text-white">Balance: 0</p>
-                            <p className="inner-cardp">dropdown</p>
-                          </div>
+                          <h5 className="inner-last-cardh5">0 SAFUU</h5>
+                          <h5 className="inner-last-cardh5">0%</h5>
+                          <h5 className="inner-last-cardh5">0% - No Fee</h5>
+                          <h5 className="inner-last-cardh5">SAFUU BNB</h5>
+                        </div>
                         </div>
                       </div>
                     </div>
