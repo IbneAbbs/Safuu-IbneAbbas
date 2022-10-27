@@ -1,71 +1,260 @@
-
-*{
- box-sizing: border-box;
- margin: 0;
- padding: 0;
-}
 /////////////////////////////////////////////////////Header///////////////////////////////////////
 
-.navbar{
-    background-color: #000000FF;
-    height: 100px;
-    display: flex;
-    align-items: left;
-    justify-content: center;
-    color:white;
-    border-bottom: 5px solid #34c439FF;
-}
-.nav-menu-items{
-    list-style: none;   
-    width: 100%;    
-}
-.menu-bars{
+@media screen and (max-width: 700px) {
+  .menu-bars {
+    display: block;
+  }
+  .nav-menu {
+    left: -100%;
+  }
+  .icons-li {
     display: none;
-    margin-left: .5rem;
-    font-size: 4rem;
-    color:#34c439FF;
-}
-.nav-menu{
-    margin-top: 6rem;
-    border: 3px solid #34c439FF;
-    overflow: hidden;
-    background-color: #000000FF;
-    width: 250px;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    ////For hiding dashboard///
-    position: fixed;
-    top: 0;
-    // left: -100%;
-    transition: 850ms;
-}
-.nav-menu.active{
-    left: 0;
-    transition: 350ms;
-}
-.nav-text{
-    font-weight: 600;
-    background-color:#011A01FF ;
-    padding: 10px 40px;
-    margin: 25px 0px;
-    height:60px;
-    width: 13rem;
-    border-radius: 10px;
-}
-.span-text{
-    padding-left: 20px;
-    color:white;
-}
-.nav-text a{
-    text-decoration: none;
-}
-.nav-text:hover{
-    
-    background-color:#34c439FF;
+  }
+  .dropdown-toggle {
+    display: none !important;
+  }
 }
 
-/////////////////////////////////////////////////////Dashboard///////////////////////////////////////
+.header-icons {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+.icons-li {
+  border: 1px solid #114e13ff !important;
+  padding: 2px 6px;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+.dropdown-toggle {
+  background-color: #011a01ff !important;
+  border: 2px solid #114e13ff !important;
+  border-radius: 0px !important;
+  color: #ffffff;
+  margin-left: 50px;
+  font-weight: 700 !important;
+}
 
+.btn-lg {
+  background-color: #34c439ff !important;
+  border: 2px solid #114e13ff !important;
+  border-radius: 0px !important;
+  color: white;
+  font-weight: 700 !important;
+}
+.navbar {
+  background-color: #000000ff;
+  height: 100px;
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  color: white;
+  border-bottom: 2px solid #47bd4bff;
+}
+.nav-menu-items {
+  list-style: none;
+  width: 100%;
+}
+.menu-bars {
+  display: none;
+  margin-left: 0.5rem;
+  font-size: 4rem;
+  color: #34c439ff;
+}
+
+.nav-menu {
+  margin-top: 6rem;
+  border: 2px solid #47bd4bff;
+  // overflow: hidden;
+  background-color: #000000ff;
+  width: 300px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  transition: 850ms;
+}
+
+.nav-menu.active {
+  left: 0;
+  transition: 350ms;
+}
+.nav-text {
+  font-weight: 600;
+  background-color: #011a01ff;
+  padding: 10px 40px;
+  margin: 25px 0px;
+  height: 60px;
+  width: 13rem;
+  border-radius: 10px;
+}
+.span-text {
+  padding-left: 20px;
+  color: white;
+}
+.nav-text a {
+  text-decoration: none;
+}
+.nav-text:hover {
+  background-color: #34c439ff;
+}
+
+/////////////////////////////////////////////////////Home///////////////////////////////////////
+
+.home-fluid {
+  background-image: url("./Media/app-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  // background-attachment: fixed;
+  background-size: cover;
+  color: white;
+  border-right: 3px solid #47bd4bff;
+}
+.container-main {
+  padding-left: 20rem !important;
+}
+
+.card-deck {
+  .card {
+    background-color: transparent;
+    border: 1px solid #47bd4bff;
+    margin: 2px 0px;
+    text-align: center;
+    .card-title {
+      font-size: 24px;
+      font-weight: 700;
+    }
+    .card-text {
+      font-size: 20px;
+      font-weight: 700;
+      color: #34c439ff;
+    }
+  }
+  .mid-card {
+    height: 21rem !important;
+    .btn-primary {
+      background-color: #011a01ff !important;
+      border: 2px solid #114e13ff !important;
+      border-radius: 0px !important;
+    }
+  }
+}
+/////////////////////////////////////////////////////Account///////////////////////////////////////
+.account-fluid {
+  background-image: url("./Media/app-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  background-size: cover;
+  border-right: 3px solid #47bd4bff;
+}
+.card-deck {
+  .account-card {
+    text-align: left;
+  }
+}
+
+.card-text-account {
+  font-size: 30px;
+  font-weight: 700;
+  color: #34c439ff;
+}
+.card-text2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+}
+.card-text-left {
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  padding-bottom: 6px;
+}
+.card-text-right {
+  font-size: 20px;
+  font-weight: 700;
+  color: #34c439ff;
+  padding-bottom: 6px;
+}
+/////////////////////////////////////////////////////Swap///////////////////////////////////////
+
+.swap-fluid {
+  background-image: url("./Media/app-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  border-right: 3px solid #47bd4bff;
+}
+
+.swap-card {
+    background-color: #010901 !important;
+  border-radius: 20px !important;
+  border: 3px solid #47bd4bff !important;
+  padding: 20px;
+  .swap-text-left {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .swap-col2{
+    text-align: right;
+  }
+  .swap-inner-card{
+    border-radius: 20px;
+    margin-bottom: 1rem;
+    background-color: transparentize($color: #141414, $amount: 0.2);
+    .inner-card-col1{
+        text-align: left;
+    }
+    .inner-card-col2{
+        text-align: right;
+    }
+    .inner-cardh5{
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .inner-cardp{
+        font-size: 15px;
+        font-weight: 700;
+        color: grey;
+    }
+  }
+  .swap-card-btn{
+    width: 100%;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+  }
+}
+
+/////////////////////////////////////////////////////Calculator///////////////////////////////////////
+.calculator-fluid {
+  background-image: url("./Media/app-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  border-right: 3px solid #47bd4bff;
+}
+
+/////////////////////////////////////////////////////Analytics///////////////////////////////////////
+.analytic-fluid {
+  background-image: url("./Media/app-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  border-right: 3px solid #47bd4bff;
+}
+
+/////////////////////////////////////////////////////Docs///////////////////////////////////////
+
+.docs-fluid {
+  background-image: url("./Media/app-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  border-right: 3px solid #47bd4bff;
+}
