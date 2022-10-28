@@ -2,7 +2,7 @@
 
 @media screen and (max-width: 700px) {
   .menu-bars {
-    display: block;
+    display: block !important;
   }
   .nav-menu {
     left: -100%;
@@ -12,9 +12,46 @@
   }
   .dropdown-toggle {
     display: none !important;
+  
+  }
+  .nav-menu {
+    border:0px;
+    background-color: #000000ff !important;
+  }
+  
+  .container-main {
+    padding-left: 0rem !important
+   }
+  .header-safuu-btn{
+  // display: none !important;
+  }
+  .list-unstyled {
+    flex-direction: column;
+    // align-items: left !important;
+    // justify-content: left !important;
+    li {
+      color: #47bd4bff;
+      padding: 1rem 2rem;
+      font-weight: 700;
+    }
   }
 }
 
+.offcanvas-title h5{
+  display: none !important;
+}
+.offcanvas-body{
+  background-color: #010901FF;
+}
+
+.header-safuu-btn{
+  margin-left: 25px;
+  width: 10rem;
+  font-size: 28px !important;
+  font-weight: 700 !important;
+  border-radius: 15px !important;
+  background-color: #34c439ff !important;
+}
 .header-icons {
   list-style: none;
   display: flex;
@@ -53,9 +90,14 @@
   color: white;
   border-bottom: 2px solid #47bd4bff;
 }
+
+
 .nav-menu-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   list-style: none;
-  width: 100%;
 }
 .menu-bars {
   display: none;
@@ -65,9 +107,9 @@
 }
 
 .nav-menu {
+  margin-left: 1.5rem;
   margin-top: 6rem;
   border: 2px solid #47bd4bff;
-  // overflow: hidden;
   background-color: #000000ff;
   width: 300px;
   height: 100vh;
@@ -75,19 +117,27 @@
   top: 0;
   transition: 850ms;
 }
-
 .nav-menu.active {
   left: 0;
   transition: 350ms;
 }
+
 .nav-text {
+  
+  cursor: pointer;
   font-weight: 600;
   background-color: #011a01ff;
-  padding: 10px 40px;
-  margin: 25px 0px;
-  height: 60px;
-  width: 13rem;
+  margin: 5px 0px;
+  height: 40px;
+  padding-left:30px;
+  padding-top: 6px;
+  margin-right: 28px;
+  width: 80%;
   border-radius: 10px;
+}
+.span-text-title {
+  padding-left: 20px;
+  color: white;
 }
 .span-text {
   padding-left: 20px;
@@ -101,24 +151,51 @@
 }
 
 /////////////////////////////////////////////////////Home///////////////////////////////////////
-
-.home-fluid {
+.container-main{
+  padding-left: 20rem;
   background-image: url("./Media/app-bg.png");
   background-position: center;
   background-repeat: no-repeat;
-  // background-attachment: fixed;
   background-size: cover;
   color: white;
   border-right: 3px solid #47bd4bff;
 }
-.container-main {
-  padding-left: 20rem !important;
-}
+
+  .rounded-circle{
+    border: 2px solid green;
+    height: 12rem;
+    width: 12rem;
+    // position: absolute;
+    // top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #47bd4b;
+    box-shadow: 20px; 
+    box-shadow:  0 0 10px 5px green;
+    animation: second 1s ease-in-out infinite;
+
+    h2{
+      font-weight: 700;
+    }
+  }
+  
+  @keyframes second {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.05);
+    }
+  }  
+  
 
 .card-deck {
-    .home-card-noborder{
-        border: 0px !important;
-    }
+  .home-card-noborder {
+    border: 0px !important;
+  }
   .card {
     background-color: transparent;
     border: 1px solid #47bd4bff;
@@ -146,14 +223,7 @@
   }
 }
 /////////////////////////////////////////////////////Account///////////////////////////////////////
-.account-fluid {
-  background-image: url("./Media/app-bg.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  color: white;
-  background-size: cover;
-  border-right: 3px solid #47bd4bff;
-}
+
 .card-deck {
   .account-card {
     text-align: left;
@@ -184,17 +254,9 @@
 }
 /////////////////////////////////////////////////////Swap///////////////////////////////////////
 
-.swap-fluid {
-  background-image: url("./Media/app-bg.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: white;
-  border-right: 3px solid #47bd4bff;
-}
 
 .swap-card {
-    background-color: #010901 !important;
+  background-color: #010901 !important;
   border-radius: 20px !important;
   border: 3px solid #47bd4bff !important;
   padding: 20px;
@@ -203,142 +265,129 @@
     font-size: 16px;
     font-weight: 700;
   }
-  .swap-col2{
+  .swap-col2 {
     text-align: right;
   }
-  .swap-inner-card{
+  .swap-inner-card {
     border-radius: 20px;
     margin-bottom: 1rem;
     background-color: transparentize($color: #141414, $amount: 0.2);
-    .inner-card-col1{
-        text-align: left;
+    .inner-card-col1 {
+      text-align: left;
     }
-    .inner-card-col2{
-        text-align: right;
+    .inner-card-col2 {
+      text-align: right;
     }
-    .inner-cardh5{
-        font-size: 20px;
-        font-weight: 700;
+    .inner-cardh5 {
+      font-size: 20px;
+      font-weight: 700;
     }
-    .inner-cardp{
-        font-size: 15px;
-        font-weight: 700;
-        color: grey;
+    .inner-cardp {
+      font-size: 15px;
+      font-weight: 700;
+      color: grey;
     }
   }
-  .swap-card-text-l{
+  .swap-card-text-l {
     font-weight: 700;
     text-align: left;
   }
-  .swap-card-text-r{
+  .swap-card-text-r {
     font-weight: 700;
     text-align: right !important;
     color: #47bd4bff;
   }
-  .swap-card-btn{
+  .swap-card-btn {
     width: 100%;
-    margin-top: .5rem;
+    margin-top: 0.5rem;
     margin-bottom: 1rem;
   }
-  .inner-last-cardh5{
+  .inner-last-cardh5 {
     font-size: 16px;
   }
-  .bi-arrow-down-short{
+  .bi-arrow-down-short {
     font-size: 35px;
   }
 }
 
 /////////////////////////////////////////////////////Calculator///////////////////////////////////////
-.calculator-fluid {
-  background-image: url("./Media/app-bg.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: white;
-  border-right: 3px solid #47bd4bff;
-}
-.cal-card{
-    padding: 20px;
-    .cal-text-heading{
-        text-align: left;
-        font-size: 20px;
-        font-weight: 700;
-    }
-    .cal-text-left{
-        text-align: left;
-        font-size: 14px;
-    }
-    .card-heading{
-        border: 0px;
-        h5{
-            font-size: 20px !important;
-            color:gray;
-        }
-        p{
-            font-size: 24px !important;
-            color:white !important;
-        }
-    }
-   
-    .form-group{
-        text-align: left !important;
-        font-weight: 700;
-        .form-control{
-            background-color: transparentize($color: #2e2d2d, $amount: 0.3);
-            font-weight: 700;
-            color: white;
-        }
-    }
-    .cal-inner-card{
-        border: 0px;
-        .inner-card-col1{
-            text-align: left;
-        }
-        .inner-card-col2{
-            text-align: right;
-        }
-    }
 
-}
-
-/////////////////////////////////////////////////////Analytics///////////////////////////////////////
-.analytic-fluid {
-  background-image: url("./Media/app-bg.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: white;
-  border-right: 3px solid #47bd4bff;
-
-  .analytic-card-last{
-    height: 45vh;
-
-    .btn-secondary{
-        background-color: transparent !important;
-        border-radius: 10px !important;
-        color: #47bd4bff;
-        font-weight: 600 !important;
+.cal-card {
+  padding: 20px;
+  .cal-text-heading {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .cal-text-left {
+    text-align: left;
+    font-size: 14px;
+  }
+  .card-heading {
+    border: 0px;
+    h5 {
+      font-size: 20px !important;
+      color: gray;
     }
+    p {
+      font-size: 24px !important;
+      color: white !important;
+    }
+  }
 
-}
-  .list-unstyled{
-    align-items: center;
-    justify-content: center;
-    li{
-        color: #47bd4bff;
-        padding: 1rem 2rem;
-        font-weight: 700;
+  .form-group {
+    text-align: left !important;
+    font-weight: 700;
+    .form-control {
+      background-color: transparentize($color: #2e2d2d, $amount: 0.3);
+      font-weight: 700;
+      color: white;
+    }
+  }
+  .cal-inner-card {
+    border: 0px;
+    .inner-card-col1 {
+      text-align: left;
+    }
+    .inner-card-col2 {
+      text-align: right;
     }
   }
 }
 
+/////////////////////////////////////////////////////Analytics///////////////////////////////////////
+
+  .emojis{
+    font-size: 50px;
+    color: orange;
+  }
+
+  .investment-btn{
+    width: 100%;
+    border-radius: 10px !important;
+  }
+
+  .analytic-card-last {
+    height: 45vh;
+
+    .btn-secondary {
+      background-color: transparent !important;
+      border-radius: 10px !important;
+      color: #47bd4bff;
+      font-weight: 600 !important;
+    }
+  }
+  .list-unstyled {
+    align-items: center;
+    justify-content: center;
+    li {
+      color: #47bd4bff;
+      padding: 1rem 2rem;
+      font-weight: 700;
+    }
+  }
+
+
 /////////////////////////////////////////////////////Docs///////////////////////////////////////
 
-.docs-fluid {
-  background-image: url("./Media/app-bg.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: white;
-  border-right: 3px solid #47bd4bff;
-}
+

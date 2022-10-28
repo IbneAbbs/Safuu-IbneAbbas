@@ -1,11 +1,12 @@
 import React from "react";
+import Countdown from "react-countdown";
 
 const AccountComp = () => {
   return (
     <>
-      <div className="container-fluid account-fluid py-5">
-        <div className="container container-main">
-          <div className="row">
+      
+        <div className="container-main">
+          <div className="row px-3">
             <div className="col-md-4  p-3">
               <div className="card-deck">
                 <div className="card">
@@ -33,14 +34,16 @@ const AccountComp = () => {
                 <div className="card">
                   <div className="card-body">
                     <h5 className="card-title">Next Rebase:</h5>
-                    <p className="card-text-account">js timer</p>
+                    <p className="card-text-account">
+                    <Countdown date={Date.now() + 100000}/>
+                    </p>
                     <p className="card-text2">Rebasing...</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="row">
+          <div className="row px-3">
             <div className="col-md-12 p-3">
               <div className="card-deck">
                 <div className="card account-card">
@@ -76,7 +79,6 @@ const AccountComp = () => {
             </div>
           </div>
         </div>
-      </div>
     </>
   );
 };

@@ -3,10 +3,10 @@ import React from "react";
 const SwapComp = () => {
   return (
     <>
-      <div className="container-fluid swap-fluid py-5">
-        <div className="container container-main">
-          <div className="row align-item-center justify-content-center">
-            <div className="col-md-7 p-1">
+      
+        <div className="container-main">
+          <div className="row align-item-center justify-content-center pt-4">
+            <div className="col-md-6 p-1">
               <div className="card-deck">
                 <div className="card swap-card">
                   <div className="card-body">
@@ -91,7 +91,6 @@ const SwapComp = () => {
             </div>
           </div>
         </div>
-      </div>
     </>
   );
 };

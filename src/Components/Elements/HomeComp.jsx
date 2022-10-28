@@ -1,11 +1,12 @@
 import React from "react";
+import Countdown from "react-countdown";
 
 const HomeComp = () => {
   return (
     <>
-      <div className="container-fluid home-fluid py-5">
-        <div className="container container-main">
-          <div className="row py-3">
+      
+        <div className="container-main">
+          <div className="row px-3">
             <div className="col-md-4  p-3">
               <div className="card-deck">
                 <div className="card home-card-noborder">
@@ -34,8 +35,19 @@ const HomeComp = () => {
               <div className="card-deck">
                 <div className="card mid-card">
                   <div className="card-body">
-                    <button className="btn btn-primary mb-3">SAFUU PRICE</button>
+                    <button className="btn btn-primary mb-3">
+                      SAFUU PRICE
+                    </button>
                     <p className="card-text">$9,256,441</p>
+
+                    <div className="rounded-circle mx-auto">
+
+                    <Countdown date={Date.now() + 100000}
+                    
+                    />
+                      
+                    </div>
+
                     <div className="card-footer">
                       <h5 className="card-title">Rebasing...</h5>
                     </div>
@@ -66,7 +78,7 @@ const HomeComp = () => {
               </div>
             </div>
           </div>
-          <div className="row">
+          <div className="row px-3">
             <div className="col-md-4">
               <div className="card-deck">
                 <div className="card">
@@ -99,7 +111,7 @@ const HomeComp = () => {
             </div>
           </div>
         </div>
-      </div>
+      
     </>
   );
 };

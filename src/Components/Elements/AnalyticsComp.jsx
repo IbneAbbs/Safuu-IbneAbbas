@@ -3,9 +3,8 @@ import React from "react";
 const AnalyticsComp = () => {
   return (
     <>
-      <div className="container-fluid analytic-fluid py-5">
-        <div className="container container-main">
-          <div className="row">
+        <div className="container-main">
+          <div className="row px-4 pt-5">
             <div className="col-md-4">
               <div className="card-deck">
                 <div className="card">
@@ -13,12 +12,13 @@ const AnalyticsComp = () => {
                     <h5 className="card-title">
                       How much you have invested so far?
                     </h5>
+                    <i class="bi bi-emoji-smile emojis"></i>
                     <p className="card-text">Total Investment</p>
                     <button
                       type="button"
-                      className="btn btn-secondary btn-lg ms-2 me-2"
+                      className="btn btn-secondary investment-btn btn-lg ms-2 me-2"
                     >
-                      Connect Wallet
+                      $0
                     </button>
                   </div>
                 </div>
@@ -29,7 +29,10 @@ const AnalyticsComp = () => {
                 <div className="card">
                   <div className="card-body">
                     <h5 className="card-title">Risk Meter</h5>
-                    <p className="card-text">$25,552,564</p>
+                    <div className="">
+                    <img className="img-fluid" src="assets/risk-meter.png" alt="" width={260} />
+                    {/* <img className="img-fluid" src="assets/needle-meeter.png" alt="" width={200} /> */}
+                    </div>                   
                   </div>
                 </div>
               </div>
@@ -41,12 +44,13 @@ const AnalyticsComp = () => {
                     <h5 className="card-title">
                       How much you have withdrawn so far?
                     </h5>
+                    <i class="bi bi-emoji-frown emojis"></i>
                     <p className="card-text">Total Earned</p>
                     <button
                       type="button"
-                      className="btn btn-secondary btn-lg ms-2 me-2"
+                      className="btn btn-secondary investment-btn btn-lg ms-2 me-2"
                     >
-                      Connect Wallet
+                      $0
                     </button>
                   </div>
                 </div>
@@ -54,7 +58,7 @@ const AnalyticsComp = () => {
             </div>
           </div>
 
-          <div className="row">
+          <div className="row px-4 pb-5">
             <div className="col-md-12">
               <div className="card-deck">
                 <div className="card analytic-card-last">
@@ -80,7 +84,6 @@ const AnalyticsComp = () => {
             </div>
           </div>
         </div>
-      </div>
     </>
   );
 };
